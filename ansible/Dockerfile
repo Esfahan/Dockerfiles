@@ -1,5 +1,7 @@
 FROM centos:7
 
+RUN yum update -y
+
 # ansible
 RUN yum clean all && \
     yum -y install epel-release && \
