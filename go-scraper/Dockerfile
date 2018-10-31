@@ -2,6 +2,8 @@ From centos:7
 
 ARG GO_VER=1.11
 
+RUN yum update -y
+
 # Golang
 WORKDIR /usr/local/src
 RUN yum install -y git
