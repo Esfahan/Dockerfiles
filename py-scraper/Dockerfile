@@ -2,6 +2,8 @@ From centos:7
 
 ARG PY_VER=3.7.0
 
+RUN yum update -y
+
 # Dpendencies
 RUN yum -y install zlib \
                    tk-devel \
